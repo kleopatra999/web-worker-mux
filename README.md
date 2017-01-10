@@ -24,7 +24,7 @@ export default function multiply() {
   ]);
   /*
   .then(([product1, product2]) => {
-    console.log(product1, product2); // 4, 6
+    console.log(product1, product2); // 4, 18
   })
   */
 }
