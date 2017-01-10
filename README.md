@@ -17,8 +17,16 @@ const worker = create(Worker, {
   }
 });
 
-export default function multiply(a, b) {
-  return worker.post({ a, b });
+export default function multiply() {
+  return Promise.all([
+    worker.post({ a: 2, b: 2 }),
+    worker.post({ a: 3, b: 6 })
+  ]);
+  /*
+  .then(([product1, product2]) => {
+    console.log(product1, product2); // 4, 6
+  })
+  */
 }
 ```
 
