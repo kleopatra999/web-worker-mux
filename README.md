@@ -1,4 +1,4 @@
-# Web Worker Mux [![Build Status](https://img.shields.io/travis/behance/web-worker-mux.svg)](http://travis-ci.org/behance/web-worker-mux)
+# Web Worker Mux [![Build Status](https://img.shields.io/travis/behance/web-worker-mux.svg)](http://travis-ci.org/behance/web-worker-mux) [![NPM Version](https://badge.fury.io/js/web-worker-mux.svg)]
 
 Allows many clients to send messages to a single web worker and only get their own responses.
 
