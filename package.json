@@ -1,0 +1,44 @@
+{
+  "name": "web-worker-mux",
+  "version": "1.0.0",
+  "description": "Allows many clients to send messages to a single web worker and only get their own responses.",
+  "main": "src",
+  "scripts": {
+    "test": "npm run eslint && npm run karma -- --single-run",
+    "eslint": "eslint src/**/*.js test/**/*.js",
+    "karma": "env NODE_ENV=test karma start test/karma.conf.js",
+    "examples-simple": "webpack-dev-server --content-base examples/simple --config ./test/webpack.config.js --entry ./examples/simple"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behance/web-worker-mux.git"
+  },
+  "author": "John Refano <refano@adobe.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/behance/web-worker-mux/issues"
+  },
+  "homepage": "https://github.com/behance/web-worker-mux#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-behance": "^3.1.0",
+    "es6-shim": "^0.35.1",
+    "eslint": "^3.7.0",
+    "eslint-plugin-behance": "^1.0.0",
+    "eslint-preset-behance": "^4.0.0",
+    "jasmine-core": "^2.5.2",
+    "jasmine-fixture": "^2.0.0",
+    "jasmine-jquery": "^2.1.1",
+    "karma": "^1.3.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.7",
+    "worker-loader": "^0.7.1"
+  }
+}
